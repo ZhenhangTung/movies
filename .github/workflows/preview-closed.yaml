@@ -11,7 +11,6 @@ jobs:
       uses: okteto/context@latest
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
-        url: ${{ secrets.OKTETO_URL }}
 
     - name: Delete namespace
       uses: okteto/destroy-preview@latest
